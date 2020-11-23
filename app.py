@@ -127,5 +127,5 @@ def cluster_result():
     
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080)) # port local env 
-    app.run(host="0.0.0.0", port=port) #env for heroku
-    # app.run(port=port, debug=True) # running appp with debug (auto load) 
+    # app.run(host="0.0.0.0", port=port) #env for heroku
+    app.run(port=port, debug=True) # running appp with debug (auto load) 
