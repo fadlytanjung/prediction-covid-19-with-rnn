@@ -1,0 +1,16 @@
+/* =============
+   Print css
+============= */
+
+@media print {
+  #topnav,.page-title-box{
+    display: none !important;
+    margin: 0;
+    padding: 0;
+  }
+  .card-box,body {
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}

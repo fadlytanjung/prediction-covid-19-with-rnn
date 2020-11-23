@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+.pt-7{
+  padding-top:7px;
+}
+.pd-10{
+  padding:10px;
+}
+
+.padding-t10{
+  padding-top: 10px;
+}
+.pl250x250{
+  width:150px;height:150px;
+}
+.margin-top50{
+  margin:50% auto;
+}
+.padding-50{
+  padding: 150px 0;
+}
+.min-height-300{
+  min-height: 300px;
+}
+.margin-0{
+  margin: 0px;
+}
+.margin-8px{
+  margin: 8px auto;
+}
+.loading {
+  margin: auto;
+  position: relative;
+  z-index: 1000;
+  width: 160px;
+  height: 160px;
+  cursor: wait;
+    }
+.bg-image{
+  background: rgba(255,255,255,0.9);
+  width:100%;
+  height:800px;
+  position: fixed;
+  padding-top: 200px;
+  z-index: 1000;
+  text-align: center;
+  display: none;
+  cursor: wait;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: Open Sans;
+}
+
+.roboto{
+  font-family: Roboto;
+}
+.footer {
+  color:#A3DAE3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #0f3138;
+  text-align:center;
+  font-family: Roboto;
+  
+}
+
+.open-sans{
+  font-family: Open Sans;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 40px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.bg-lighting{
+  background: #1c4c55;
+}
+
+.color-font{
+  color:#1c4c55;
+}
+
+.padding-tb-50{
+  padding:50px 0px 50px;
+}
+
+.transparent{
+  background: transparent;
+  border:none;
+  transition: 0.4s ease-out;
+}
+.transparent .focus,.transparent:focus,.transparent:hover,.transparent:active{
+  background: transparent;
+  border:none;
+  box-shadow: none;
+  width:160px;
+  height:160px;
+
+}
+
+.color-p{
+  /*color:#3ea9be;*/
+  color:#0f3138;  
+}
+
+.color-red{
+  color:red;
+}
+code {
+  font-size: 80%;
+}

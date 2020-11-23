@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>Web Prediksi Covid-19</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/agency.min.css" rel="stylesheet">
+  <link href="../static/css/custom.css" rel="stylesheet">
+  <!-- DataTables -->
+  <link href="../static/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+  <link href="../static/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+  <!-- Responsive datatable examples -->
+  <link href="../static/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- App css -->
+  <link href="../static/assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link href="../static/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+  <link href="../static/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<style>
+  header .new {
+    background-image: url("../img/black-white.jpg");
+  }
+
+  header.masthead .intro-text .intro-lead-in {
+    color: #ffc107;
+  }
+
+  header.masthead .intro-text .intro-heading {
+    font-size: 65px;
+  }
+
+  .col-md-4,
+  copyright {
+    text-align: center;
+    margin: auto;
+  }
+
+  form {
+    width: 85%;
+    margin: auto;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    border-radius: 10px !important;
+  }
+
+  .form-control {
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+  }
+</style>
+
+<body id="page-top">
+  <div class="bg-image" id="img" style="display:none">
+    <img src="../static/img/loading.gif" class="loading" />
+    <p>Processing..</p>
+  </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Petunjuk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" id="portofoliohead" href="#portfolio">Input Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" id="resulthead" href="#result">Hasil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Prediksi Angka Covid-19</div>
+        <div class="intro-heading text-uppercase">Menggunakan metode <i>RNN</i></div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Mulai</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Petunjuk</h2>
+          <h3 class="section-subheading text-muted">Berikut ini adalah petunjuk dalam penggunaan sistem.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <!--<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
+          </span>
+          <h4 class="service-heading">Data</h4>
+          <p class="text-muted">Cari berkas pada folder bernama data, lalu pastikan data yang akan diimpor berformat
+            .xlsx</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <!--<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
+          </span>
+          <h4 class="service-heading">Jumlah Hari</h4>
+          <p class="text-muted">Jumlah hari yang diproses oleh sistem maksimal sebanyak 30 hari kedepan.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <!--<i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
+          </span>
+          <h4 class="service-heading">Hasil</h4>
+          <p class="text-muted">Tekan button proses untuk menampilkan hasil prediksi. Hasil akan tampil berupa
+            visualialisasi plot dan tabel prediksi data covid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container" id="result" style="display:none;padding-top:20px;">
+    <div class="col-12">
+      <div class="card-box table-responsive">
+        <h4 class="m-t-0 header-title"><b>Hasil Prediksi</b></h4>
+        <div class="row">
+          <div class="col-md-6">
+            <img width="100%" class="img-thumbnail lossmodel" />
+          </div>
+          <div class="col-md-6">
+            <img width="100%" class="img-thumbnail predicted" />
+          </div>
+          <div class="col-md-12">
+            <br></br>
+          </div>
+          <div class="col-md-12">
+            <img width="100%" class="img-thumbnail forecast" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center" style="padding:20px">
+            <h4 class="m-t-0 header-title"><b>Tabel Prediksi Angka Covid-19</b></h4>
+            <table class="table table-bordered" style="width:100%">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>tanggal</th>
+                  <th>Actual</th>
+                  <th>Prediksi</th>
+                </tr>
+              </thead>
+              <tbody id="evaluate-table">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </div> <!-- end row -->
+
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Input Data</h2>
+          <h3 class="section-subheading text-muted">Input jumlah hari (1-30) dan file data covid-19 dalam format xlsx.</h3>
+        </div>
+        <form>
+          <div class="form-group">
+            <center><label>Input Jumlah hari</label></center>
+            <input type="number" name="n" class="form-control ndata" />
+          </div>
+          <div class="form-group">
+            <center><label>Input Data</label></center>
+            <input type="file" name="file" class="form-control" accept=".csv, .xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
+          </div>
+          <center><button type="submit" class="btn btn-primary" id="process">Proses</button></center>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; <b>X</b> 2020</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="../static/js/contact_me.js"></script>
+  <script src="../static/js/jqBootstrapValidation.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../static/js/agency.min.js"></script>
+
+
+  <!-- Required datatable js -->
+  <script src="../static/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../static/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+
+
+  <script type="text/javascript">
+    function array_move(arr, old_index, new_index) {
+      if (new_index >= arr.length) {
+        var k = new_index - arr.length + 1;
+        while (k--) {
+          arr.push(undefined);
+        }
+      }
+      arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+      return arr; // for testing
+    };
+  
+    var data = null
+    $(document).ready(function () {
+
+
+      $('#process').on('click',function () {
+        $('#evaluate-table').empty();
+        $('#img').show(); //<----here
+        
+        var form_data = new FormData($('form')[0]);
+        var ndata = $('.ndata').val();
+
+        if (ndata > 30) {
+          alert("Jumlah hari hanya boleh maksimal 30");
+          $('#img').hide(); //<----here
+          return false;
+        }
+        if (ndata == "" || ndata == 0) {
+          alert("Jumlah hari tidak boleh kosong atau nol");
+          $('#img').hide(); //<----here
+          return false;
+        }
+
+        
+        var file = $('input[name=file]').val();
+        var formatExt = file.split('.');
+        var allowedFormat = ['xlsx','csv'];
+
+        // if(!allowedFormat.includes(formatExt[formatExt.length - 1])){
+        //     alert("Format file tidak sesuai");
+        //   $('#img').hide();
+        //   return false
+        //   }
+
+        // if (file == "") {
+        //   alert("Data tidak boleh kosong")
+        //   $('#img').hide();
+        //   return false
+        // }
+        $.ajax({
+          url: '/prediction',
+          data: form_data,
+          contentType: false,
+          cache: false,
+          processData: false,
+          async: false,
+          type: 'POST',
+          success: function (response) {
+            data = response
+            $('#img').hide();  //<--- hide again
+            $('#result').show();
+            $('#resulthead').addClass('active');
+            $('#portfoliohead').removeClass('active');
+            $('html,body').animate({ scrollTop: 1410 }, 'slow');
+
+            var imageName = 'Confirmed-' + response.N + '.png';
+            if (file==""){
+              $('.lossmodel').attr("src", '../static/hasilplot/loss_model_good.png');
+              $('.predicted').attr("src", '../static/hasilplot/prediction_good.png');
+            }else{
+              $('.lossmodel').attr("src", '../static/hasilplot/loss_model.png');
+              $('.predicted').attr("src", '../static/hasilplot/prediction.png');
+            }
+            $('.forecast').attr("src", '../static/hasilplot/' + imageName);
+            var dataTable = [];
+            let dataResult = {
+              'Confirm':{},
+              'date':{},
+              'forecast':{},
+            };
+            for(const item in response.data) {
+              const data_temp = {}
+              for(const subitem in response.data[item]){
+                data_temp[Number(subitem)] = response.data[item][subitem]
+              }
+              dataResult[item] = data_temp;
+              
+            };
+
+            for(const item in dataResult['Confirm']){
+              let td =  `<tr>
+                <td>${Number(item) + 1}</td>
+                <td>${dataResult['date'][item]}</td>
+                <td>${dataResult['Confirm'][item]}</td>
+                <td>${Math.floor(dataResult['forecast'][item])}</td>
+                </tr>`;
+              dataTable.push(td);
+            }
+            
+             $('#evaluate-table').append(dataTable);
+          }
+        });
+        return false;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
