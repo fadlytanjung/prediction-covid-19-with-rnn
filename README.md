@@ -15,6 +15,6 @@ pip3 install -r requirements.txt
 Running this app with following command:
 
 ```
-python3 main.py
+python3 app.py
 ```
 
